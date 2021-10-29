@@ -1,9 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[10]:
-
-
 from keras.applications.inception_v3 import InceptionV3
 from tensorflow.keras.optimizers import SGD
 from tensorflow.keras.preprocessing.image import ImageDataGenerator
@@ -13,7 +7,7 @@ from keras.callbacks import ModelCheckpoint, TensorBoard, EarlyStopping
 import os.path
 
 
-# In[11]:
+
 
 
 
@@ -35,7 +29,6 @@ model.compile(optimizer='rmsprop', loss='categorical_crossentropy', metrics=['ac
 
 
 
-# In[12]:
 
 
 
@@ -56,7 +49,6 @@ train_generator = train_datagen.flow_from_directory(r"C:\Users\lalith kumar\Desk
 train_generator
 
 
-# In[13]:
 
 
 model.fit_generator(
@@ -64,14 +56,11 @@ model.fit_generator(
         epochs=10)
 
 
-# In[ ]:
 
 
 import cv2 as cv
 from tensorflow.keras.applications.mobilenet_v2 import preprocess_input
 
-
-# In[19]:
 
 
 import tensorflow as tf
@@ -95,28 +84,3 @@ img=cv.resize(img,(700,500))
 cv.putText(img, li[v], (0,20), cv.FONT_HERSHEY_TRIPLEX, 1.0, pi[v], 2)
 cv.imshow('pic', img)      
 cv.waitKey(0)
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
