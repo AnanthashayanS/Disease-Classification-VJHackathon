@@ -8,4 +8,4 @@ THIS REPO contains of the diseases clasification in plants using ML
 //////
 //////
 //////
-THAnK YOU
+THANK YOU
